@@ -27,7 +27,8 @@ prediction = 2 #init
 #------------------------------
 # Setup MLflow
 
-mlflow.set_tracking_uri("http://localhost:5000")
+# mlflow.set_tracking_uri("http://localhost:5000")
+mlflow.set_tracking_uri("http://127.0.0.1:8080")
 
 # Logged model
 logged_model = 'runs:/a6ed523cccc3490cb616ec59758b41ce/weather_forcast'

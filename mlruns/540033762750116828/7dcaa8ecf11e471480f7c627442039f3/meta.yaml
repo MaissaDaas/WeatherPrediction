@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/540033762750116828/7dcaa8ecf11e471480f7c627442039f3/artifacts
+end_time: 1734473014468
+entry_point_name: ''
+experiment_id: '540033762750116828'
+lifecycle_stage: active
+run_id: 7dcaa8ecf11e471480f7c627442039f3
+run_name: luxuriant-seal-333
+run_uuid: 7dcaa8ecf11e471480f7c627442039f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734473011128
+status: 3
+tags: []
+user_id: codespace

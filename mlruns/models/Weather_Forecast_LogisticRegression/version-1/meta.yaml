@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1734473014460
+current_stage: None
+description: ''
+last_updated_timestamp: 1734473014460
+name: Weather_Forecast_LogisticRegression
+run_id: 7dcaa8ecf11e471480f7c627442039f3
+run_link: ''
+source: mlflow-artifacts:/540033762750116828/7dcaa8ecf11e471480f7c627442039f3/artifacts/LogisticRegression_model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/540033762750116828/7dcaa8ecf11e471480f7c627442039f3/artifacts/LogisticRegression_model
+user_id: null
+version: 1

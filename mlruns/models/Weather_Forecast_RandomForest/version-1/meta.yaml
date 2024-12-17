@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1734473017437
+current_stage: None
+description: ''
+last_updated_timestamp: 1734473017437
+name: Weather_Forecast_RandomForest
+run_id: 89926ba2b6d6481aa3a8462513ac8a2d
+run_link: ''
+source: mlflow-artifacts:/540033762750116828/89926ba2b6d6481aa3a8462513ac8a2d/artifacts/RandomForest_model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/540033762750116828/89926ba2b6d6481aa3a8462513ac8a2d/artifacts/RandomForest_model
+user_id: null
+version: 1
