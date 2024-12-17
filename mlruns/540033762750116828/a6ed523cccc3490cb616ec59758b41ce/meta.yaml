@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/540033762750116828/a6ed523cccc3490cb616ec59758b41ce/artifacts
+end_time: 1734471573466
+entry_point_name: ''
+experiment_id: '540033762750116828'
+lifecycle_stage: active
+run_id: a6ed523cccc3490cb616ec59758b41ce
+run_name: magnificent-wasp-900
+run_uuid: a6ed523cccc3490cb616ec59758b41ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734471569936
+status: 3
+tags: []
+user_id: codespace

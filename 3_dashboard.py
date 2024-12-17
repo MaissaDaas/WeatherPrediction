@@ -30,7 +30,7 @@ prediction = 2 #init
 mlflow.set_tracking_uri("http://localhost:5000")
 
 # Logged model
-logged_model = 'runs:/8d469037124041e6b171d14007ab5ef7/weather_forcast'
+logged_model = 'runs:/a6ed523cccc3490cb616ec59758b41ce/weather_forcast'
 
 # Load model as a PyFuncModel.
 loaded_model = mlflow.pyfunc.load_model(logged_model)
