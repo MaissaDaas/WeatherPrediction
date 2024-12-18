@@ -34,10 +34,10 @@ mlflow.set_experiment("MLflow WeatherForcast-1")
 
 # Define models and training logic
 models = {
-    "LogisticRegression": LogisticRegression(
+    "LogisticRegression-data1": LogisticRegression(
         solver="lbfgs", max_iter=1000, random_state=42
     ),
-    "RandomForest": RandomForestClassifier(n_estimators=100, random_state=42),
+    "RandomForest-data1": RandomForestClassifier(n_estimators=100, random_state=42),
 }
 
 for model_name, model in models.items():
@@ -55,10 +55,10 @@ for model_name, model in models.items():
         # Log parameters
         mlflow.log_param("model_name", model_name)
         mlflow.log_param("data_file", os.path.basename(datafilename))
-        if model_name == "LogisticRegression":
+        if model_name == "LogisticRegression-data1":
             mlflow.log_param("solver", "lbfgs")
             mlflow.log_param("max_iter", 1000)
-        elif model_name == "RandomForest":
+        elif model_name == "RandomForest-data1":
             mlflow.log_param("n_estimators", 100)
 
         # Log metrics

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/540033762750116828/eda1d786afe74e8e85269cd1195574be/artifacts
+end_time: 1734523171493
+entry_point_name: ''
+experiment_id: '540033762750116828'
+lifecycle_stage: active
+run_id: eda1d786afe74e8e85269cd1195574be
+run_name: agreeable-pig-305
+run_uuid: eda1d786afe74e8e85269cd1195574be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734523168456
+status: 3
+tags: []
+user_id: codespace

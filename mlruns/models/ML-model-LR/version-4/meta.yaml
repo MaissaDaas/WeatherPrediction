@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1734522607819
+current_stage: None
+description: ''
+last_updated_timestamp: 1734522607819
+name: ML-model-LR
+run_id: 21f3796ae834466aa7c6dd026586ca01
+run_link: ''
+source: mlflow-artifacts:/125574372928454910/21f3796ae834466aa7c6dd026586ca01/artifacts/weather_forecast_lr
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/125574372928454910/21f3796ae834466aa7c6dd026586ca01/artifacts/weather_forecast_lr
+user_id: null
+version: 4

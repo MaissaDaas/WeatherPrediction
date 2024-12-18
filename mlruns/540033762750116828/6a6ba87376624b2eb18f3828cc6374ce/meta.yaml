@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/540033762750116828/6a6ba87376624b2eb18f3828cc6374ce/artifacts
+end_time: 1734523174218
+entry_point_name: ''
+experiment_id: '540033762750116828'
+lifecycle_stage: active
+run_id: 6a6ba87376624b2eb18f3828cc6374ce
+run_name: dazzling-kit-975
+run_uuid: 6a6ba87376624b2eb18f3828cc6374ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734523171503
+status: 3
+tags: []
+user_id: codespace

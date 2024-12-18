@@ -1,0 +1,26 @@
+artifact_path: LogisticRegression-data1_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.0
+mlflow_version: 2.19.0
+model_size_bytes: 886
+model_uuid: bf79ebecb7dd408798b25fbc3cab3e33
+run_id: eda1d786afe74e8e85269cd1195574be
+signature:
+  inputs: '[{"type": "double", "name": "Temperature", "required": true}, {"type":
+    "double", "name": "Humidity", "required": true}, {"type": "double", "name": "Cloud_Cover",
+    "required": true}, {"type": "double", "name": "Pressure", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-12-18 11:59:28.535416'

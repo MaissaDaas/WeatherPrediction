@@ -17,9 +17,11 @@ from sklearn.decomposition import PCA
 #datafilename = "https://raw.githubusercontent.com/shravyapendyala/CCE_Assignment_1/refs/heads/main/weather_forecast_data.csv"
 datafilename = "data/weather_forecast_data.csv"
 dataset=pd.read_csv(datafilename)
+
 # Label Encoding on Rain Column
 label_encoder=preprocessing.LabelEncoder()
 dataset['Rain']=label_encoder.fit_transform(dataset['Rain'])
+
 # Dimentionality reduction by removing Wind_speed column
 new_dataset=dataset.drop(columns=['Wind_Speed'])
 # Get X and Y 
@@ -45,11 +47,20 @@ params = {
 # Train the model: LogisticRegression
 lr = LogisticRegression(**params)
 lr.fit(X_train, y_train)
+
 # Predict on the test set
 y_pred = lr.predict(X_test)
+
 # Calculate metrics
 accuracy = accuracy_score(y_test, y_pred)
+precision = precision_score(y_test, y_pred, average='binary')  # For binary classification
+recall = recall_score(y_test, y_pred, average='binary')  # For binary classification
+f1 = f1_score(y_test, y_pred, average='binary') 
+
 print("LogisticRegression Model Accuracy:", accuracy)
+print("Precision:", precision)
+print("Recall:", recall)
+print("F1 Score:", f1)
 #print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
 #-------------------------------------------------------------------------------------------------------
@@ -66,8 +77,14 @@ with mlflow.start_run():
     # Log the hyperparameters
     mlflow.log_params(params)
 
+    model_name = "WeatherForecastModel-LR"  # Add your model name here
+    mlflow.log_param("model_name", model_name)
+
     # Log the loss metric
     mlflow.log_metric("accuracy", accuracy)
+    mlflow.log_metric("precision", precision)
+    mlflow.log_metric("recall", recall)
+    mlflow.log_metric("f1_score", f1)
 
     # Set a tag that we can use to remind ourselves what this run was for
     mlflow.set_tag("Training Info", "Weather Forcast Leanear Regression model for weather data")
