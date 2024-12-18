@@ -28,7 +28,7 @@ defusedxml
 Deprecated
 docker
 executing
-fastjsonschema=
+fastjsonschema
 filelock
 Flask
 fonttools
