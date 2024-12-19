@@ -67,7 +67,11 @@ prediction = 2 #init
 mlflow.set_tracking_uri("http://127.0.0.1:8080")
 
 # Logged model
-logged_model = 'runs:/6a6ba87376624b2eb18f3828cc6374ce/RandomForest-data1_model'
+# logged_model = 'models:/RandomForest-data1/Production'
+# logged_model = 'runs:/6a6ba87376624b2eb18f3828cc6374ce/RandomForest-data1_model'
+
+logged_model = 'models:/Weather_Forecast_RandomForest-data1/1' 
+
 
 # Load model as a PyFuncModel.
 loaded_model = mlflow.pyfunc.load_model(logged_model)
